@@ -1,3 +1,37 @@
 body {
+   margin: 10px auto;
+   background-color: #cccccc;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper {
+   display: block;
    margin: 0 auto;
+   max-width: 1000px;
+   /*padding: 10px;*/
+   background-color: lightgreen;
+   border: 2px solid grey;
+}
+.header__title {
+   padding: 20px;
+   text-align: center;
+   color: grey;
+   letter-spacing: 5px;
+}
+.text-area {
+   border: 2px solid grey;
+   padding: 20px;
+   width: 90%;
+   height: 300px;
+   margin-bottom: 20px;
+   font-size: 24px;
+   color: grey;
+}
+.button {
+   margin: 0 auto;
+   width: 30px;
+   height: 30px;
+   border-radius: 10px;
+   background-color:bisque;
+   color: grey;
+   font-size: 20px;
 }
