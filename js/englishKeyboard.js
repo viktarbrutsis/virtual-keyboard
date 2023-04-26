@@ -1,143 +1,402 @@
 //probably create one file with ruValue and enValue???
-export const englishKeyboard = [
+//add event.code?
+export const englishKeyboardArray = [
    {
       row: 0,
       value: 'Esc',
-      pressedShift: ''
+      pressedShift: '',
+      capsLocked: ''
+   },
+   {
+      row: 0,
+      value: '`',
+      pressedShift: '~',
+      capsLocked: ''
    },
    {
       row: 0,
       value: '1',
       pressedShift: '!',
+      capsLocked: ''
    },
    {
       row: 0,
       value: '2',
       pressedShift: '@',
+      capsLocked: ''
    },
    {
       row: 0,
       value: '3',
       pressedShift: '#',
+      capsLocked: ''
    },
    {
       row: 0,
       value: '4',
       pressedShift: '$',
+      capsLocked: ''
    },
    {
       row: 0,
       value: '5',
       pressedShift: '%',
+      capsLocked: '',
    },
    {
       row: 0,
       value: '6',
       pressedShift: '^',
+      capsLocked: '',
    },
    {
       row: 0,
       value: '7',
       pressedShift: '&',
+      capsLocked: '',
    },
    {
       row: 0,
       value: '8',
       pressedShift: '*',
+      capsLocked: '',
    },
    {
       row: 0,
       value: '9',
       pressedShift: '(',
+      capsLocked: '',
    },
    {
       row: 0,
       value: '0',
       pressedShift: ')',
+      capsLocked: '',
    },
    {
       row: 0,
       value: '-',
       pressedShift: '_',
+      capsLocked: '',
    },
    {
       row: 0,
       value: '=',
       pressedShift: '+',
+      capsLocked: '',
    },
    {
       row: 0,
       value: 'Backspace',
       pressedShift: '',
+      capsLocked: '',
    },
    {
       row: 1,
       value: 'Tab',
       pressedShift: '',
+      capsLocked: '',
    },
    {
       row: 1,
       value: 'q',
       pressedShift: 'Q',
+      capsLocked: 'Q',
    },
    {
       row: 1,
       value: 'w',
       pressedShift: 'W',
+      capsLocked: 'W',
    },
    {
       row: 1,
       value: 'r',
       pressedShift: 'R',
+      capsLocked: 'R',
    },
    {
       row: 1,
       value: 't',
       pressedShift: 'T',
+      capsLocked: 'T',
    },
    {
       row: 1,
       value: 'y',
       pressedShift: 'Y',
+      capsLocked: 'Y',
    },
    {
       row: 1,
       value: 'u',
       pressedShift: 'U',
+      capsLocked: 'U',
    },
    {
       row: 1,
       value: 'i',
       pressedShift: 'I',
+      capsLocked: 'I',
    },
    {
       row: 1,
       value: 'o',
       pressedShift: 'O',
+      capsLocked: 'O',
    },
    {
       row: 1,
       value: 'p',
       pressedShift: 'P',
+      capsLocked: 'P',
    },
    {
       row: 1,
       value: '[',
       pressedShift: '{',
+      capsLocked: '',
    },
    {
       row: 1,
       value: ']',
       pressedShift: '}',
+      capsLocked: '',
    },
    {
       row: 1,
-      value: '\'',
+      value: '\\',
       pressedShift: '|',
+      capsLocked: '',
    },
    {
       row: 1,
       value: 'Backspace',
       pressedShift: '',
+      capsLocked: '',
+   },
+   {
+      row: 2,
+      value: 'caps Lock',
+      pressedShift: '',
+      capsLocked: '',
+   },
+   {
+      row: 2,
+      value: 'a',
+      pressedShift: 'A',
+      capsLocked: 'A',
+   },
+   {
+      row: 2,
+      value: 's',
+      pressedShift: 'S',
+      capsLocked: 'S',
+   },
+   {
+      row: 2,
+      value: 'd',
+      pressedShift: 'D',
+      capsLocked: 'D',
+   },
+   {
+      row: 2,
+      value: 'f',
+      pressedShift: 'F',
+      capsLocked: 'F',
+   },
+   {
+      row: 2,
+      value: 'g',
+      pressedShift: 'G',
+      capsLocked: 'G',
+   },
+   {
+      row: 2,
+      value: 'h',
+      pressedShift: 'H',
+      capsLocked: 'H',
+   },
+   {
+      row: 2,
+      value: 'j',
+      pressedShift: 'J',
+      capsLocked: 'J',
+   },
+   {
+      row: 2,
+      value: 'k',
+      pressedShift: 'K',
+      capsLocked: 'K',
+   },
+   {
+      row: 2,
+      value: 'l',
+      pressedShift: 'L',
+      capsLocked: 'L',
+   },
+   {
+      row: 2,
+      value: ';',
+      pressedShift: ':',
+      capsLocked: '',
+   },
+   {
+      row: 2,
+      value: '\'',
+      pressedShift: '"',
+      capsLocked: '',
+   },
+   {
+      row: 2,
+      value: 'return',
+      pressedShift: '',
+      capsLocked: '',
+   },
+   {
+      row: 3,
+      value: 'shift',
+      pressedShift: '',
+      capsLocked: '',
+   },
+   {
+      row: 3,
+      value: 's',
+      pressedShift: 'S',
+      capsLocked: 'S',
+   },
+   {
+      row: 3,
+      value: 'z',
+      pressedShift: 'Z',
+      capsLocked: 'Z',
+   },
+   {
+      row: 3,
+      value: 'x',
+      pressedShift: 'X',
+      capsLocked: 'X',
+   },
+   {
+      row: 3,
+      value: 'c',
+      pressedShift: 'C',
+      capsLocked: 'C',
+   },
+   {
+      row: 3,
+      value: 'v',
+      pressedShift: 'V',
+      capsLocked: 'V',
+   },
+   {
+      row: 3,
+      value: 'b',
+      pressedShift: 'B',
+      capsLocked: 'B',
+   },
+   {
+      row: 3,
+      value: 'n',
+      pressedShift: 'N',
+      capsLocked: 'N',
+   },
+   {
+      row: 3,
+      value: 'm',
+      pressedShift: 'M',
+      capsLocked: 'M',
+   },
+   {
+      row: 3,
+      value: ',',
+      pressedShift: '<',
+      capsLocked: '',
+   },
+   {
+      row: 3,
+      value: '.',
+      pressedShift: '>',
+      capsLocked: '',
+   },
+   {
+      row: 3,
+      value: '/',
+      pressedShift: '?',
+      capsLocked: '',
+   },
+   {
+      row: 3,
+      value: 'shift',
+      pressedShift: '',
+      capsLocked: '',
+   },
+   {
+      row: 4,
+      value: 'z',
+      pressedShift: 'Z',
+      capsLocked: 'Z',
+   },
+   {
+      row: 4,
+      value: 'x',
+      pressedShift: 'X',
+      capsLocked: 'X',
+   },
+   {
+      row: 4,
+      value: 'c',
+      pressedShift: 'C',
+      capsLocked: 'C',
+   },
+   {
+      row: 4,
+      value: 'v',
+      pressedShift: 'V',
+      capsLocked: 'V',
+   },
+   {
+      row: 4,
+      value: 'b',
+      pressedShift: 'B',
+      capsLocked: 'B',
+   },
+   {
+      row: 4,
+      value: 'n',
+      pressedShift: 'N',
+      capsLocked: 'N',
+   },
+   {
+      row: 4,
+      value: 'm',
+      pressedShift: 'M',
+      capsLocked: 'M',
+   },
+   {
+      row: 4,
+      value: ',',
+      pressedShift: '<',
+      capsLocked: '',
+   },
+   {
+      row: 4,
+      value: '.',
+      pressedShift: '>',
+      capsLocked: '',
+   },
+   {
+      row: 4,
+      value: '/',
+      pressedShift: '?',
+      capsLocked: '',
+   },
+   {
+      row: 4,
+      value: 'shift',
+      pressedShift: '',
+      capsLocked: '',
    }
 ];
+
+

@@ -1,5 +1,6 @@
-//import { createButton } from "./js/createButton";
-//import { englishKeyboard } from "./js/englishKeyboard";
+// import { createButton } from "./js/createButton";
+import { englishKeyboardArray } from "./js/englishKeyboard.js";
+
 //header and textarea
 const body = document.querySelector('body'),
       header = document.createElement('header'),
