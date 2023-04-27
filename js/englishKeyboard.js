@@ -7,7 +7,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '27',
-      code: '',
+      code: 'Escape',
    },
    {
       row: 0,
@@ -15,7 +15,7 @@ export const englishKeyboardArray = [
       pressedShift: '~',
       capsLocked: '',
       keycode: '48',
-      code: '',
+      code: 'Backquote',
    },
    {
       row: 0,
@@ -23,7 +23,7 @@ export const englishKeyboardArray = [
       pressedShift: '!',
       capsLocked: '',
       keycode: '49',
-      code: '',
+      code: 'Digit1',
    },
    {
       row: 0,
@@ -31,7 +31,7 @@ export const englishKeyboardArray = [
       pressedShift: '@',
       capsLocked: '',
       keycode: '50',
-      code: '',
+      code: 'Digit2',
    },
    {
       row: 0,
@@ -39,7 +39,7 @@ export const englishKeyboardArray = [
       pressedShift: '#',
       capsLocked: '',
       keycode: '51',
-      code: '',
+      code: 'Digit3',
    },
    {
       row: 0,
@@ -47,7 +47,7 @@ export const englishKeyboardArray = [
       pressedShift: '$',
       capsLocked: '',
       keycode: '52',
-      code: '',
+      code: 'Digit4',
    },
    {
       row: 0,
@@ -55,7 +55,7 @@ export const englishKeyboardArray = [
       pressedShift: '%',
       capsLocked: '',
       keycode: '53',
-      code: '',
+      code: 'Digit5',
    },
    {
       row: 0,
@@ -63,7 +63,7 @@ export const englishKeyboardArray = [
       pressedShift: '^',
       capsLocked: '',
       keycode: '54',
-      code: '',
+      code: 'Digit6',
    },
    {
       row: 0,
@@ -71,7 +71,7 @@ export const englishKeyboardArray = [
       pressedShift: '&',
       capsLocked: '',
       keycode: '55',
-      code: '',
+      code: 'Digit7',
    },
    {
       row: 0,
@@ -79,7 +79,7 @@ export const englishKeyboardArray = [
       pressedShift: '*',
       capsLocked: '',
       keycode: '56',
-      code: '',
+      code: 'Digit8',
    },
    {
       row: 0,
@@ -87,7 +87,7 @@ export const englishKeyboardArray = [
       pressedShift: '(',
       capsLocked: '',
       keycode: '57',
-      code: '',
+      code: 'Digit9',
    },
    {
       row: 0,
@@ -95,7 +95,7 @@ export const englishKeyboardArray = [
       pressedShift: ')',
       capsLocked: '',
       keycode: '48',
-      code: '',
+      code: 'Digit0',
    },
    {
       row: 0,
@@ -103,7 +103,7 @@ export const englishKeyboardArray = [
       pressedShift: '_',
       capsLocked: '',
       keycode: '189',
-      code: '',
+      code: 'Minus',
    },
    {
       row: 0,
@@ -111,7 +111,7 @@ export const englishKeyboardArray = [
       pressedShift: '+',
       capsLocked: '',
       keycode: '187',
-      code: '',
+      code: 'Equal',
    },
    {
       row: 0,
@@ -119,7 +119,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '8',
-      code: '',
+      code: 'Backspace',
    },
    {
       row: 1,
@@ -127,7 +127,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '9',
-      code: '',
+      code: 'Tab',
    },
    {
       row: 1,
@@ -135,7 +135,7 @@ export const englishKeyboardArray = [
       pressedShift: 'Q',
       capsLocked: 'Q',
       keycode: '81',
-      code: '',
+      code: 'KeyQ',
    },
    {
       row: 1,
@@ -143,7 +143,7 @@ export const englishKeyboardArray = [
       pressedShift: 'W',
       capsLocked: 'W',
       keycode: '87',
-      code: '',
+      code: 'KeyW',
    },
    {
       row: 1,
@@ -151,7 +151,7 @@ export const englishKeyboardArray = [
       pressedShift: 'E',
       capsLocked: 'E',
       keycode: '69',
-      code: '',
+      code: 'KeyE',
    },
    {
       row: 1,
@@ -159,7 +159,7 @@ export const englishKeyboardArray = [
       pressedShift: 'R',
       capsLocked: 'R',
       keycode: '82',
-      code: '',
+      code: 'KeyR',
    },
    {
       row: 1,
@@ -167,7 +167,7 @@ export const englishKeyboardArray = [
       pressedShift: 'T',
       capsLocked: 'T',
       keycode: '84',
-      code: '',
+      code: 'KeyT',
    },
    {
       row: 1,
@@ -175,7 +175,7 @@ export const englishKeyboardArray = [
       pressedShift: 'Y',
       capsLocked: 'Y',
       keycode: '89',
-      code: '',
+      code: 'KeyY',
    },
    {
       row: 1,
@@ -183,7 +183,7 @@ export const englishKeyboardArray = [
       pressedShift: 'U',
       capsLocked: 'U',
       keycode: '85',
-      code: '',
+      code: 'KeyU',
    },
    {
       row: 1,
@@ -191,7 +191,7 @@ export const englishKeyboardArray = [
       pressedShift: 'I',
       capsLocked: 'I',
       keycode: '73',
-      code: '',
+      code: 'KeyI',
    },
    {
       row: 1,
@@ -199,7 +199,7 @@ export const englishKeyboardArray = [
       pressedShift: 'O',
       capsLocked: 'O',
       keycode: '79',
-      code: '',
+      code: 'KeyO',
    },
    {
       row: 1,
@@ -207,7 +207,7 @@ export const englishKeyboardArray = [
       pressedShift: 'P',
       capsLocked: 'P',
       keycode: '80',
-      code: '',
+      code: 'KeyP',
    },
    {
       row: 1,
@@ -215,7 +215,7 @@ export const englishKeyboardArray = [
       pressedShift: '{',
       capsLocked: '',
       keycode: '219',
-      code: '',
+      code: 'BracketLeft',
    },
    {
       row: 1,
@@ -223,7 +223,7 @@ export const englishKeyboardArray = [
       pressedShift: '}',
       capsLocked: '',
       keycode: '221',
-      code: '',
+      code: 'BracketRight',
    },
    {
       row: 1,
@@ -231,7 +231,7 @@ export const englishKeyboardArray = [
       pressedShift: '|',
       capsLocked: '',
       keycode: '220',
-      code: '',
+      code: 'Backslash',
    },
    {
       row: 2,
@@ -239,7 +239,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '20',
-      code: '',
+      code: 'CapsLock',
    },
    {
       row: 2,
@@ -247,7 +247,7 @@ export const englishKeyboardArray = [
       pressedShift: 'A',
       capsLocked: 'A',
       keycode: '65',
-      code: '',
+      code: 'KeyA',
    },
    {
       row: 2,
@@ -255,7 +255,7 @@ export const englishKeyboardArray = [
       pressedShift: 'S',
       capsLocked: 'S',
       keycode: '83',
-      code: '',
+      code: 'KeyS',
    },
    {
       row: 2,
@@ -263,7 +263,7 @@ export const englishKeyboardArray = [
       pressedShift: 'D',
       capsLocked: 'D',
       keycode: '68',
-      code: '',
+      code: 'KeyD',
    },
    {
       row: 2,
@@ -271,7 +271,7 @@ export const englishKeyboardArray = [
       pressedShift: 'F',
       capsLocked: 'F',
       keycode: '70',
-      code: '',
+      code: 'KeyF',
    },
    {
       row: 2,
@@ -279,7 +279,7 @@ export const englishKeyboardArray = [
       pressedShift: 'G',
       capsLocked: 'G',
       keycode: '71',
-      code: '',
+      code: 'KeyG',
    },
    {
       row: 2,
@@ -287,7 +287,7 @@ export const englishKeyboardArray = [
       pressedShift: 'H',
       capsLocked: 'H',
       keycode: '72',
-      code: '',
+      code: 'KeyH',
    },
    {
       row: 2,
@@ -295,7 +295,7 @@ export const englishKeyboardArray = [
       pressedShift: 'J',
       capsLocked: 'J',
       keycode: '74',
-      code: '',
+      code: 'KeyJ',
    },
    {
       row: 2,
@@ -303,7 +303,7 @@ export const englishKeyboardArray = [
       pressedShift: 'K',
       capsLocked: 'K',
       keycode: '75',
-      code: '',
+      code: 'KeyK',
    },
    {
       row: 2,
@@ -311,7 +311,7 @@ export const englishKeyboardArray = [
       pressedShift: 'L',
       capsLocked: 'L',
       keycode: '76',
-      code: '',
+      code: 'KeyL',
    },
    {
       row: 2,
@@ -319,7 +319,7 @@ export const englishKeyboardArray = [
       pressedShift: ':',
       capsLocked: '',
       keycode: '186',
-      code: '',
+      code: 'Semicolon',
    },
    {
       row: 2,
@@ -327,7 +327,7 @@ export const englishKeyboardArray = [
       pressedShift: '"',
       capsLocked: '',
       keycode: '222',
-      code: '',
+      code: 'Quote',
    },
    {
       row: 2,
@@ -335,7 +335,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '13',
-      code: '',
+      code: 'Enter',
    },
    {
       row: 3,
@@ -343,7 +343,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '16',
-      code: '',
+      code: 'ShiftLeft',
    },
    {
       row: 3,
@@ -351,7 +351,7 @@ export const englishKeyboardArray = [
       pressedShift: 'Z',
       capsLocked: 'Z',
       keycode: '90',
-      code: '',
+      code: 'KeyZ',
    },
    {
       row: 3,
@@ -359,7 +359,7 @@ export const englishKeyboardArray = [
       pressedShift: 'X',
       capsLocked: 'X',
       keycode: '88',
-      code: '',
+      code: 'KeyX',
    },
    {
       row: 3,
@@ -367,7 +367,7 @@ export const englishKeyboardArray = [
       pressedShift: 'C',
       capsLocked: 'C',
       keycode: '67',
-      code: '',
+      code: 'KeyC',
    },
    {
       row: 3,
@@ -375,7 +375,7 @@ export const englishKeyboardArray = [
       pressedShift: 'V',
       capsLocked: 'V',
       keycode: '86',
-      code: '',
+      code: 'KeyV',
    },
    {
       row: 3,
@@ -383,7 +383,7 @@ export const englishKeyboardArray = [
       pressedShift: 'B',
       capsLocked: 'B',
       keycode: '66',
-      code: '',
+      code: 'KeyB',
    },
    {
       row: 3,
@@ -391,7 +391,7 @@ export const englishKeyboardArray = [
       pressedShift: 'N',
       capsLocked: 'N',
       keycode: '78',
-      code: '',
+      code: 'KeyN',
    },
    {
       row: 3,
@@ -399,7 +399,7 @@ export const englishKeyboardArray = [
       pressedShift: 'M',
       capsLocked: 'M',
       keycode: '77',
-      code: '',
+      code: 'KeyM',
    },
    {
       row: 3,
@@ -407,7 +407,7 @@ export const englishKeyboardArray = [
       pressedShift: '<',
       capsLocked: '',
       keycode: '188',
-      code: '',
+      code: 'Comma',
    },
    {
       row: 3,
@@ -415,7 +415,7 @@ export const englishKeyboardArray = [
       pressedShift: '>',
       capsLocked: '',
       keycode: '190',
-      code: '',
+      code: 'Period',
    },
    {
       row: 3,
@@ -423,7 +423,7 @@ export const englishKeyboardArray = [
       pressedShift: '?',
       capsLocked: '',
       keycode: '191',
-      code: '',
+      code: 'Slash',
    },
    {
       row: 3,
@@ -431,7 +431,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '16',
-      code: '',
+      code: 'ShiftRight',
    },
    {
       row: 4,
@@ -447,7 +447,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '17',
-      code: '',
+      code: 'ControlLeft',
    },
    {
       row: 4,
@@ -455,7 +455,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '18',
-      code: '',
+      code: 'AltLeft',
    },
    {
       row: 4,
@@ -487,7 +487,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '18',
-      code: '',
+      code: 'AltRight',
    },
    {
       row: 4,
@@ -495,7 +495,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '37',
-      code: '',
+      code: 'ArrowLeft',
    },
    {
       row: 4,
@@ -503,7 +503,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '38',
-      code: '',
+      code: 'ArrowUp',
    },
    {
       row: 4,
@@ -511,7 +511,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '40',
-      code: '',
+      code: 'ArrowDown',
    },
    {
       row: 4,
@@ -519,7 +519,7 @@ export const englishKeyboardArray = [
       pressedShift: '',
       capsLocked: '',
       keycode: '39',
-      code: '',
+      code: 'ArrowRight',
    },
 ];
 

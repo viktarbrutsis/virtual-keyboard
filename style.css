@@ -10,6 +10,8 @@ body {
    /*padding: 10px;*/
    background-color: lightgreen;
    /*border: 2px solid grey;*/
+   margin-bottom: 20px;
+   padding-bottom: 20px;
 }
 .header__title {
    padding: 20px;
@@ -22,7 +24,6 @@ body {
    padding: 20px;
    width: 90%;
    height: 300px;
-   margin-bottom: 20px;
    /*font-size: 20px;*/
    color: grey;
 }
@@ -45,4 +46,7 @@ body {
    display: flex;
    flex-wrap: wrap;
    gap: 5px;
+}
+.button-pressed {
+   background-color: burlywood;
 }
