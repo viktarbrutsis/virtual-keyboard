@@ -1,7 +1,2 @@
-export function createButton(obj) {
-   const button = document.createElement('div');
-
-   button.classList.add('button');
-   button.innerText = `${obj[i].value}`
-
-}
+//import { englishKeyboardArray } from "./englishKeyboard.js";
+//import { buttonArea } from "../main.js";
