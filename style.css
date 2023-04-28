@@ -41,6 +41,10 @@ body {
    align-items: center;
    font-size: 18px;
 }
+.button:hover {
+   cursor: pointer;
+   background-color: #cccccc;
+}
 .button-area {
    padding: 15px 5px;
    display: flex;

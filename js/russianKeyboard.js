@@ -259,7 +259,7 @@ export const russianKeyboardArray = [
    },
    {
       row: 2,
-      value: 'а',
+      value: 'в',
       pressedShift: 'В',
       capsLocked: 'В',
       keycode: '68',
@@ -267,7 +267,7 @@ export const russianKeyboardArray = [
    },
    {
       row: 2,
-      value: 'А',
+      value: 'а',
       pressedShift: 'А',
       capsLocked: 'А',
       keycode: '70',
