@@ -1,4 +1,4 @@
-//import { createButton } from "./js/createButton.js";
+import { russianKeyboardArray } from "./js/russianKeyboard.js";
 import { englishKeyboardArray } from "./js/englishKeyboard.js";
 
 //header and textarea
@@ -53,7 +53,7 @@ document.addEventListener('keydown', (event) => {
     if (event.code === elem.id) {
       elem.classList.add('button-pressed');
     }
-  })
+  });
 });
 
 // document.addEventListener('keydown', (elem) => {
