@@ -7,7 +7,7 @@ const body = document.querySelector('body'),
       headerTitle = document.createElement('h1'),
       textArea = document.createElement('textarea');
 
-let language = 'russian',
+let language = 'english',
     capsLock = false,
     shift = false,
     string = '';
@@ -56,40 +56,13 @@ init();
 
 //let codeArray = ['Escape', 'Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace', 'Tab', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash', 'CapsLock', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter', 'ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ShiftRight', 'fn', 'ControlLeft', 'AltLeft', 'MetaLeft', 'Space', 'MetaRight', 'AltRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown', 'ArrowRight'];
 
-// codeArray.forEach(item => {
-//    item.addEventListener('click', () => {
-//       console.log(item.getAttribute('id'));
-//    });
-// });
 const allButtons = document.querySelectorAll('.button');
-
-
-
-
-// document.addEventListener('click', (elem) => {
-//   console.log(elem.code);
-//   console.log(elem.key);
-//   allButtons.forEach(button => {
-//     if (elem.key == button.id) {
-//       console.log(button.id);
-//       button.classList.add('button-pressed');
-//     }
-//   });
-// });
-//change the language
-//const buttonAltLeft = document.querySelector('#Space'),
-//      buttonSpace = document.querySelector('#MetaLeft');
-//document.addEventListener('keydown', () => {
-//  if (buttonAltLeft.repeat == true && buttonSpace.repeat == true) {
-//    console.log('меняем язык');
-//  }
-//});
 
 function deleteTextarea() {
   buttonArea.innerHTML = ``;
 }
 
-//change language on real kewboard
+//change language on real keyboard
 let flag = false;
 
 document.addEventListener('keydown', (event) => {
@@ -99,83 +72,48 @@ document.addEventListener('keydown', (event) => {
       buttonArea.innerHTML = ``;
       init();
       flag = false;
-      document.addEventListener('keydown', (event) => {
-        allButtons.forEach(elem => {
-          if (event.code === elem.id) {
-            elem.classList.add('button-pressed');
-            string += `${event.key}`;
-            textArea.innerText = string;
-          }
-        });
-      });
-      allButtons.forEach(elem => {
-        elem.addEventListener('click', () => {
-          elem.classList.add('button-pressed');
-          console.log(elem.innerText);
-          string += `${elem.innerText}`;
-          textArea.innerText = string;
-        });
-      });
     }
     if(language === 'russian' && event.code == 'KeyV' && flag) {
       language = 'english';
       buttonArea.innerHTML = ``;
       init();
       flag = false;
-      document.addEventListener('keydown', (event) => {
-        allButtons.forEach(elem => {
-          if (event.code === elem.id) {
-            elem.classList.add('button-pressed');
-            string += `${event.key}`;
-            textArea.innerText = string;
-          }
-        });
-      });
-      allButtons.forEach(elem => {
-        elem.addEventListener('click', () => {
-          elem.classList.add('button-pressed');
-          console.log(elem.innerText);
-          string += `${elem.innerText}`;
-          textArea.innerText = string;
-        });
-      });
     }
 });
 
-const buttonSpace = document.querySelector('#Space'),
-      capsButton = document.querySelector('#Capslock');
-
-buttonSpace.addEventListener('dblclick', () => {
-  if (language === 'english') {
-    deleteTextarea();
-    createButton(russianKeyboardArray);
-    language = 'russian';
-    return language;
-  }
-  if (language === 'russian')  {
-    deleteTextarea();
-    createButton(englishKeyboardArray);
-    language = 'english';
-    return language;
-  }
-});
-
+//click buttons on real keyboard
 document.addEventListener('keydown', (event) => {
   allButtons.forEach(elem => {
     if (event.code === elem.id) {
+      allButtons.forEach(button => {
+      button.classList.remove('button-pressed');
+      })
+      console.log(elem.innerText);
       elem.classList.add('button-pressed');
-      string += `${event.key}`;
+      string += `${elem.innerText}`;
       textArea.innerText = string;
+      // textArea.focus();
     }
+    // if (event.code === elem.id && language === 'english') {
+    //   console.log(elem.innerText);
+    //   elem.classList.add('button-pressed');
+    //   string += `${elem.innerText}`;
+    //   textArea.innerText = string;
+    // }
   });
 });
 
 allButtons.forEach(elem => {
-  elem.addEventListener('click', () => {
+  elem.addEventListener('click', (e) => {
+    allButtons.forEach(button => {
+      button.classList.remove('button-pressed');
+    })
+    console.log(e);
     elem.classList.add('button-pressed');
     console.log(elem.innerText);
-    string += `${elem.innerText}`;
+    string += `${e.target.innerText}`;
     textArea.innerText = string;
+    // textArea.focus();
   });
 });
 //capsButton.add('click', () => {

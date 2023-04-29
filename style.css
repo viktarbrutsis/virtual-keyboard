@@ -54,3 +54,6 @@ body {
 .button-pressed {
    background-color: burlywood;
 }
+.button:active {
+   background-color: burlywood;
+}
