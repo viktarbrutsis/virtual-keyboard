@@ -75,8 +75,8 @@ export const russianKeyboardArray = [
    },
    {
       row: 0,
-      value: ';',
-      pressedShift: '*',
+      value: '8',
+      pressedShift: ';',
       capsLocked: '8',
       keycode: '56',
       code: 'Digit8',

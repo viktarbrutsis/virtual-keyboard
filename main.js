@@ -28,6 +28,19 @@ textArea.classList.add('wrapper', 'text-area');
 //textArea.innerText = string;
 header.append(headerTitle, textArea);
 body.append(buttonArea);
+textArea.focus();
+
+const subtitleOne = document.createElement('p'),
+      subtitleTwo = document.createElement('p');
+
+subtitleOne.classList.add('subtitle');
+subtitleTwo.classList.add('subtitle');
+
+
+subtitleOne.innerText = 'The keyboard is created in Mac system';
+subtitleTwo.innerText = 'To change the language press: Space + м';
+
+body.append(subtitleOne, subtitleTwo);
 
 function createButton(array) {
    for (let i = 0; i < array.length; i++) {
@@ -38,6 +51,16 @@ function createButton(array) {
       buttonArea.append(button);
    }
 
+}
+
+function createCapsKeyboard(array) {
+  for (let i = 0; i < array.length; i++) {
+    const button = document.createElement('div');
+    button.classList.add('button');
+    button.innerText = `${array[i].capsLocked}`;
+    button.id = `${array[i].code}`;
+    buttonArea.append(button);
+ }
 }
 
 function init() {
@@ -52,6 +75,17 @@ function init() {
 }
 
 init();
+
+function initCapsLetters() {
+  if (language === 'english') {
+    //buttonArea.innerHTML = ``;
+    createCapsKeyboard(englishKeyboardArray);
+  }
+  if (language === 'russian') {
+    //buttonArea.innerHTML = ``;
+    createCapsKeyboard(russianKeyboardArray);
+  }
+}
 
 
 //let codeArray = ['Escape', 'Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Backspace', 'Tab', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP', 'BracketLeft', 'BracketRight', 'Backslash', 'CapsLock', 'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote', 'Enter', 'ShiftLeft', 'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', 'Comma', 'Period', 'Slash', 'ShiftRight', 'fn', 'ControlLeft', 'AltLeft', 'MetaLeft', 'Space', 'MetaRight', 'AltRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown', 'ArrowRight'];
@@ -88,7 +122,6 @@ document.addEventListener('keydown', (event) => {
       allButtons.forEach(button => {
       button.classList.remove('button-pressed');
       })
-      console.log(elem.innerText);
       elem.classList.add('button-pressed');
       string += `${elem.innerText}`;
       textArea.innerText = string;
@@ -116,11 +149,33 @@ allButtons.forEach(elem => {
     // textArea.focus();
   });
 });
-//capsButton.add('click', () => {
-//  if (!capsLock) {
-//    createButton
-//  }
-//});
+
+//caps
+const capsButton = document.querySelector('#CapsLock');
+
+document.addEventListener('click', (e) => {
+  let button = e.target.id;
+  if (button === 'CapsLock') {
+    if (capsLock == false) {
+      capsLock = true;
+      capsButton.classList.add('button-pressed');
+      if (language === 'russian') {
+        buttonArea.innerHTML = ``;
+        initCapsLetters(russianKeyboardArray);
+      } else {
+        buttonArea.innerHTML = ``;
+        initCapsLetters(englishKeyboardArray);
+      }
+      console.log(capsLock);
+    } else {
+      capsLock = false;
+      capsButton.classList.remove('button-pressed');
+      buttonArea.innerHTML = ``;
+      init();
+    }
+  }
+
+});
 
 
 

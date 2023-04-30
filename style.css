@@ -57,3 +57,10 @@ body {
 .button:active {
    background-color: burlywood;
 }
+.subtitle {
+   padding: 20px;
+   text-align: center;
+   color: grey;
+   letter-spacing: 5px;
+   font-size: 20px;
+}
